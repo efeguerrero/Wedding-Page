@@ -1,0 +1,237 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Roboto:wght@100;300;400&display=swap");
+/* Reset Style */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.2rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ebe9e9;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  position: relative;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  height: 10vh;
+}
+
+.navBar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.navTitle {
+  color: black;
+}
+
+.mainNavContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navIcon-Container {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.navIcon {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.linksContainer {
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.link {
+  padding: 0.6rem 0;
+  padding-left: 1rem;
+  list-style: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.link:hover {
+  background-color: #ebe9e9;
+  cursor: pointer;
+  padding-left: 1.8rem;
+}
+
+.link:hover a {
+  color: #ff3366;
+}
+
+/*Media Query for NavBar Expansion*/
+@media screen and (min-width: 768px) {
+  .navIcon-Container {
+    display: none;
+  }
+  .linksContainer {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    -webkit-transition: none;
+    transition: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: transparent;
+  }
+  .link {
+    padding-left: 0rem;
+    margin: 0.5rem;
+  }
+  a {
+    color: white;
+    font-size: 0.8rem;
+  }
+  .linksList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .mainNavContainer {
+    display: none;
+  }
+  .navBar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: transparent;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .navTitle {
+    color: white;
+  }
+  .link:hover {
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 0rem;
+  }
+  .navBar-fixed {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+/* Section Style */
+.section {
+  height: 80vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../img/mainHeader.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.siteTitle {
+  font-family: 'Alex Brush', cursive;
+  text-align: center;
+  margin-bottom: 10vh;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 0.8rem;
+  font-weight: 200;
+  padding: 1rem;
+  padding-left: 1.6rem;
+}
+
+/*Add this to avoid title moving around once navBar becomes "FIXED"*/
+.siteTitle-fixed {
+  margin-bottom: 0;
+  margin-top: 10vh;
+}
+
+.subHeader {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .siteTitle {
+    font-size: 4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

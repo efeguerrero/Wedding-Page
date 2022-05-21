@@ -1,0 +1,37 @@
+header {
+  height: 100vh;
+  background-image: url(../img/mainHeader.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.siteTitle {
+  font-family: 'Alex Brush', cursive;
+  text-align: center;
+  margin-bottom: 10vh;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 0.8rem;
+  font-weight: 200;
+  padding: 1rem;
+  padding-left: 1.6rem;
+}
+
+/*Add this to avoid title moving around once navBar becomes "FIXED"*/
+.siteTitle-fixed {
+  margin-bottom: 0;
+  margin-top: 10vh;
+}
+
+.subHeader {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .siteTitle {
+    font-size: 4rem;
+  }
+}
