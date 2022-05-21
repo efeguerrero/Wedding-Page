@@ -36,6 +36,7 @@ window.addEventListener('resize', function () {
 
 const navBar = document.querySelector('.navBar');
 const siteTitle = document.querySelector('.siteTitle');
+const links = document.querySelectorAll('.scrollLink');
 
 window.addEventListener('scroll', function () {
   const navBarHeight = navBar.getBoundingClientRect().height;
@@ -43,9 +44,15 @@ window.addEventListener('scroll', function () {
   if (window.scrollY > navBarHeight) {
     navBar.classList.add('navBar-fixed');
     siteTitle.classList.add('siteTitle-fixed');
+    links.forEach(function (link) {
+      link.classList.add('link-fixed');
+    });
   } else {
     navBar.classList.remove('navBar-fixed');
     siteTitle.classList.remove('siteTitle-fixed');
+    links.forEach(function (link) {
+      link.classList.remove('link-fixed');
+    });
   }
 });
 
@@ -54,8 +61,6 @@ window.addEventListener('scroll', function () {
 /////////////////////////////////////////////////////////////////////
 //START OF SMOOTH SCROLL CORRECT BEHAVIOR - SCROLLING TO EXACT AREA//
 /////////////////////////////////////////////////////////////////////
-
-const links = document.querySelectorAll('.scrollLink');
 
 links.forEach(function (item) {
   item.addEventListener('click', function (e) {

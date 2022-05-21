@@ -1,14 +1,15 @@
 header {
   height: 100vh;
-  background-image: url(../img/mainHeader.jpeg);
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/img/salinas.jpeg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .siteTitle {
   font-family: 'Alex Brush', cursive;
   text-align: center;
-  margin-bottom: 10vh;
+  // margin-bottom: 10vh;
   color: white;
   font-size: 2.5rem;
   letter-spacing: 0.8rem;
@@ -26,6 +27,7 @@ header {
 .subHeader {
   height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

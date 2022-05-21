@@ -7,7 +7,7 @@ a {
 .navBar {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   transition: all 0.2s linear;
   height: 10vh;
@@ -69,7 +69,7 @@ a {
 }
 
 .link:hover a {
-  color: #ff3366;
+  color: rgb(205, 202, 202);
 }
 
 /*Media Query for NavBar Expansion*/
@@ -93,12 +93,12 @@ a {
 
   .link {
     padding-left: 0rem;
-    margin: 0.5rem;
+    margin: 1.5rem;
   }
 
   a {
     color: white;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .linksList {
@@ -130,7 +130,12 @@ a {
     padding-left: 0rem;
   }
 
+  //Styling for when navBar becomes Fixed
+
   .navBar-fixed {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .link-fixed {
+    color: black;
   }
 }
