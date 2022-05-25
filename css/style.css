@@ -7,12 +7,19 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.2rem;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #ebe9e9;
+}
+
+.underline {
+  width: 10rem;
+  height: 1.5px;
+  background-color: black;
+  margin: 1.5rem auto;
+  margin-top: 0.5rem;
 }
 
 a {
@@ -29,11 +36,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   position: relative;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  height: 10vh;
+  height: 8vh;
 }
 
 .navBar-fixed {
@@ -162,7 +169,7 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background-color: transparent;
-    width: 100vw;
+    width: 90vw;
     margin: 0 auto;
   }
   .navTitle {
@@ -174,7 +181,8 @@ a {
     padding-left: 0rem;
   }
   .navBar-fixed {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
+    width: 100vw;
   }
   .link-fixed {
     color: black;
@@ -183,7 +191,7 @@ a {
 
 /* Section Style */
 .section {
-  height: 80vh;
+  min-height: 80vh;
   text-align: center;
   padding: 2rem;
 }
@@ -191,16 +199,25 @@ a {
 .sectionTitle {
   font-family: 'Alex Brush', cursive;
   font-size: 4rem;
-  font-weight: 200;
-  letter-spacing: 0.6rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+}
+
+.underline {
+  width: 10rem;
+  height: 1.5px;
+  background-color: black;
+  margin: 2.5rem auto;
+  margin-top: 0.5rem;
 }
 
 header {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/Salinas.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Salinas.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/header1.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .siteTitle {
@@ -241,5 +258,65 @@ header {
   .siteTitle {
     font-size: 4rem;
   }
+}
+
+.date {
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+
+.locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.location_container {
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding: 1.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.location_container_title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.location_container_text {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.location_container_address {
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.location_container_button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: blanchedalmond;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

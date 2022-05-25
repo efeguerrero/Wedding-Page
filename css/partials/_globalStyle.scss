@@ -9,10 +9,18 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.2rem;
+  //letter-spacing: 0.2rem;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: rgb(235, 233, 233);
+}
+
+.underline {
+  width: 10rem;
+  height: 1.5px;
+  background-color: black;
+  margin: 1.5rem auto;
+  margin-top: 0.5rem;
 }

@@ -7,10 +7,10 @@ a {
 .navBar {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   position: relative;
   transition: all 0.2s linear;
-  height: 10vh;
+  height: 8vh;
 }
 
 .navBar-fixed {
@@ -116,7 +116,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
     background-color: transparent;
-    width: 100vw;
+    width: 90vw;
     margin: 0 auto;
   }
 
@@ -133,7 +133,8 @@ a {
   //Styling for when navBar becomes Fixed
 
   .navBar-fixed {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
+    width: 100vw;
   }
   .link-fixed {
     color: black;
