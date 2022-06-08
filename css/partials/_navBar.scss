@@ -1,4 +1,4 @@
-a {
+.scrollLink {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -63,13 +63,17 @@ a {
 }
 
 .link:hover {
-  background-color: rgb(235, 233, 233);
+  background-color: $green;
   cursor: pointer;
   padding-left: 1.8rem;
 }
 
-.link:hover a {
-  color: rgb(205, 202, 202);
+/*Media Query for effects only happening on small screen*/
+
+@media screen and (max-width: 768px) {
+  .link:hover .scrollLink {
+    color: white;
+  }
 }
 
 /*Media Query for NavBar Expansion*/
@@ -96,7 +100,7 @@ a {
     margin: 1.5rem;
   }
 
-  a {
+  .scrollLink {
     color: white;
     font-size: 1rem;
   }
@@ -130,6 +134,15 @@ a {
     padding-left: 0rem;
   }
 
+  .scrollLink {
+    border-bottom: 1px solid transparent;
+  }
+
+  .link:hover .scrollLink {
+    transition: all 0.3s linear;
+    border-bottom: 1px solid white;
+  }
+
   //Styling for when navBar becomes Fixed
 
   .navBar-fixed {
@@ -138,5 +151,10 @@ a {
   }
   .link-fixed {
     color: black;
+
+    &:hover {
+      color: $green;
+      border-bottom: 1px solid $green;
+    }
   }
 }

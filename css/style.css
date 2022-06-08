@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*Inicio Definición de Mixins*/
+/*Fin Definición de Mixins*/
 /* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Roboto:wght@100;300;400&display=swap");
 /* Reset Style */
@@ -11,18 +14,18 @@
 }
 
 body {
-  background-color: #ebe9e9;
+  background-color: #ffffff;
 }
 
 .underline {
   width: 10rem;
   height: 1.5px;
-  background-color: black;
+  background-color: #000000;
   margin: 1.5rem auto;
   margin-top: 0.5rem;
 }
 
-a {
+.scrollLink {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -106,13 +109,16 @@ a {
 }
 
 .link:hover {
-  background-color: #ebe9e9;
+  background-color: #70a076;
   cursor: pointer;
   padding-left: 1.8rem;
 }
 
-.link:hover a {
-  color: #cdcaca;
+/*Media Query for effects only happening on small screen*/
+@media screen and (max-width: 768px) {
+  .link:hover .scrollLink {
+    color: white;
+  }
 }
 
 /*Media Query for NavBar Expansion*/
@@ -140,7 +146,7 @@ a {
     padding-left: 0rem;
     margin: 1.5rem;
   }
-  a {
+  .scrollLink {
     color: white;
     font-size: 1rem;
   }
@@ -180,6 +186,14 @@ a {
     cursor: pointer;
     padding-left: 0rem;
   }
+  .scrollLink {
+    border-bottom: 1px solid transparent;
+  }
+  .link:hover .scrollLink {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    border-bottom: 1px solid white;
+  }
   .navBar-fixed {
     background-color: white;
     width: 100vw;
@@ -187,11 +201,14 @@ a {
   .link-fixed {
     color: black;
   }
+  .link-fixed:hover {
+    color: #70a076;
+    border-bottom: 1px solid #70a076;
+  }
 }
 
 /* Section Style */
 .section {
-  min-height: 80vh;
   text-align: center;
   padding: 2rem;
 }
@@ -205,8 +222,8 @@ a {
 
 .underline {
   width: 10rem;
-  height: 1.5px;
-  background-color: black;
+  height: 2.5px;
+  background-color: #70a076;
   margin: 2.5rem auto;
   margin-top: 0.5rem;
 }
@@ -223,7 +240,7 @@ header {
 .siteTitle {
   font-family: 'Alex Brush', cursive;
   text-align: center;
-  color: white;
+  color: #ffffff;
   font-size: 2.5rem;
   letter-spacing: 0.7rem;
   font-weight: 200;
@@ -291,8 +308,15 @@ header {
 }
 
 .location_container_title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.4rem;
+  color: #70a076;
+}
+
+.location_container_time {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -305,18 +329,164 @@ header {
   font-weight: 400;
   font-size: 1rem;
   font-style: italic;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .location_container_button {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  background-color: blanchedalmond;
+  background-color: #70a076;
   border: none;
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
+  border: 2px solid transparent;
   cursor: pointer;
 }
+
+.location_container_button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.location_container_button:hover {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: #ffffff;
+  border: 2px solid #70a076;
+}
+
+.location_container_button:hover a {
+  color: #70a076;
+}
+
+@media screen and (min-width: 768px) {
+  .locations {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.nosotros {
+  background-color: rgba(245, 240, 240, 0.7);
+}
+
+/*****************************************
+  INICIO
+  GALERIA
+  ****************************************
+  ****************************************
+  */
+.galeria {
+  max-width: 70vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.galeria__img {
+  width: 100%;
+}
+
+/* ************************************** 
+INICIO MEDIA QUERIES GALERIA
+************************************** */
+@media screen and (min-width: 768px) {
+  .galeria {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .galeria__img {
+    width: calc(50% - 1rem);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .galeria__img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 1rem;
+  }
+  .galeria__img {
+    width: 100%;
+  }
+  .galeria__img--destacada1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  .galeria__img--destacada2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3/5;
+  }
+  .galeria__img--destacada3 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-column: 4/6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+}
+
+/* ************************************** 
+FIN MEDIA QUERIES GALERIA
+************************************** */
+/* 
+****************************************
+****************************************
+FIN GALERIA
+**************************************** 
+****************************************
+*/
 /*# sourceMappingURL=style.css.map */

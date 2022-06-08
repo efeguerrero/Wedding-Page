@@ -14,13 +14,13 @@
 }
 
 body {
-  background-color: rgb(235, 233, 233);
+  background-color: $white;
 }
 
 .underline {
   width: 10rem;
   height: 1.5px;
-  background-color: black;
+  background-color: $black;
   margin: 1.5rem auto;
   margin-top: 0.5rem;
 }

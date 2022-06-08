@@ -1,0 +1,38 @@
+//Colors
+$green: #70a076;
+$white: #ffffff;
+$black: #000000;
+$orange: #f19143;
+$grey: #2d2d18;
+
+/*Inicio Definición de Mixins*/
+
+@mixin flexbox-column-display(
+  $flex-direction: column,
+  $justify-content: center,
+  $align-items: stretch
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin img-destacada($posicion) {
+  @if $posicion==destacada-1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  @if $posicion==destacada-2 {
+    grid-column: 2/4;
+    grid-row: 3/5;
+  }
+
+  @if $posicion==destacada-3 {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+}
+
+/*Fin Definición de Mixins*/

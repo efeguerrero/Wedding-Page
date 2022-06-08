@@ -1,7 +1,6 @@
 /* Section Style */
 
 .section {
-  min-height: 80vh;
   text-align: center;
   padding: 2rem;
 }
@@ -16,8 +15,8 @@
 
 .underline {
   width: 10rem;
-  height: 1.5px;
-  background-color: black;
+  height: 2.5px;
+  background-color: $green;
   margin: 2.5rem auto;
   margin-top: 0.5rem;
 }

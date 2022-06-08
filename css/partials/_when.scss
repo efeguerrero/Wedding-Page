@@ -19,8 +19,15 @@
   flex-direction: column;
 
   &_title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 0.4rem;
+    color: $green;
+  }
+
+  &_time {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
@@ -32,16 +39,39 @@
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
 
   &_button {
+    transition: all 0.2s linear;
     width: fit-content;
     margin: 0 auto;
-    background-color: blanchedalmond;
+    background-color: $green;
     border: none;
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
+    border: 2px solid transparent;
     cursor: pointer;
+    & a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    &:hover {
+      transition: all 0.2s linear;
+      background-color: $white;
+      border: 2px solid $green;
+      & a {
+        color: $green;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .locations {
+    flex-direction: row;
+    justify-content: center;
   }
 }

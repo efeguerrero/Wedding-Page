@@ -1,0 +1,71 @@
+.nosotros {
+  background-color: rgba(245, 240, 240, 0.7);
+}
+
+/*****************************************
+  INICIO
+  GALERIA
+  ****************************************
+  ****************************************
+  */
+.galeria {
+  max-width: 70vw;
+  margin: 0 auto;
+  @include flexbox-column-display;
+  align-items: center;
+  gap: 1rem;
+  &__img {
+    width: 100%;
+  }
+}
+
+/* ************************************** 
+INICIO MEDIA QUERIES GALERIA
+************************************** */
+
+@media screen and (min-width: 768px) {
+  .galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &__img {
+      width: calc(50% - 1rem);
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    grid-gap: 1rem;
+
+    &__img {
+      width: 100%;
+
+      @for $i from 1 through 3 {
+        &--destacada#{$i} {
+          @include img-destacada(destacada-#{$i});
+        }
+      }
+    }
+  }
+}
+
+/* ************************************** 
+FIN MEDIA QUERIES GALERIA
+************************************** */
+
+/* 
+****************************************
+****************************************
+FIN GALERIA
+**************************************** 
+****************************************
+*/
