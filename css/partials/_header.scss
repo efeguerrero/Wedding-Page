@@ -1,22 +1,32 @@
 header {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/header1.jpeg);
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  //   url(../img/header1.jpeg);
+  background-color: $green;
+  background-image: url(../../img/fondo_header.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .siteTitle {
-  font-family: 'Alex Brush', cursive;
+  font-family: "Alex Brush", cursive;
   text-align: center;
   // margin-bottom: 10vh;
   color: $white;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   letter-spacing: 0.7rem;
   font-weight: 200;
   padding: 1rem;
   padding-left: 1.6rem;
+  &_amper {
+    display: block;
+    font-family: "Alex Brush", cursive;
+    text-align: center;
+    // margin-bottom: 10vh;
+    color: $white;
+    font-size: 3.5rem;
+  }
 }
 
 /*Add this to avoid title moving around once navBar becomes "FIXED"*/
@@ -35,6 +45,9 @@ header {
 
 @media screen and (min-width: 768px) {
   .siteTitle {
-    font-size: 4rem;
+    font-size: 7rem;
+    &_amper {
+      display: inline;
+    }
   }
 }

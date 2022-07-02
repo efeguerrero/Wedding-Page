@@ -6,17 +6,30 @@
 }
 
 .sectionTitle {
-  font-family: 'Alex Brush', cursive;
-  font-size: 4rem;
+  font-family: "Alex Brush", cursive;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: 100;
   letter-spacing: 0.2rem;
+  margin-top: 2.5 rem;
   //text-transform: uppercase;
 }
 
 .underline {
-  width: 10rem;
+  width: 5rem;
   height: 2.5px;
   background-color: $green;
   margin: 2.5rem auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+  .underline {
+    margin-bottom: 4rem;
+  }
 }

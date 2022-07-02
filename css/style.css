@@ -119,11 +119,11 @@ body {
   }
   .link {
     padding-left: 0rem;
-    margin: 1.5rem;
+    margin: 1.5rem 6rem;
   }
   .scrollLink {
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .linksList {
     display: flex;
@@ -176,37 +176,59 @@ body {
 }
 
 .sectionTitle {
-  font-family: 'Alex Brush', cursive;
-  font-size: 4rem;
+  font-family: "Alex Brush", cursive;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: 100;
   letter-spacing: 0.2rem;
+  margin-top: 2.5 rem;
 }
 
 .underline {
-  width: 10rem;
+  width: 5rem;
   height: 2.5px;
   background-color: #70a076;
   margin: 2.5rem auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+  .underline {
+    margin-bottom: 4rem;
+  }
 }
 
 header {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header1.jpeg);
+  background-color: #70a076;
+  background-image: url(../../img/fondo_header.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .siteTitle {
-  font-family: 'Alex Brush', cursive;
+  font-family: "Alex Brush", cursive;
   text-align: center;
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   letter-spacing: 0.7rem;
   font-weight: 200;
   padding: 1rem;
   padding-left: 1.6rem;
+}
+
+.siteTitle_amper {
+  display: block;
+  font-family: "Alex Brush", cursive;
+  text-align: center;
+  color: #ffffff;
+  font-size: 3.5rem;
 }
 
 /*Add this to avoid title moving around once navBar becomes "FIXED"*/
@@ -225,13 +247,29 @@ header {
 
 @media screen and (min-width: 768px) {
   .siteTitle {
-    font-size: 4rem;
+    font-size: 7rem;
   }
+  .siteTitle_amper {
+    display: inline;
+  }
+}
+
+.mainInfo {
+  height: 100vh;
 }
 
 .date {
   font-weight: 200;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.date_title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3rem;
+  color: #70a076;
 }
 
 .locations {
@@ -244,16 +282,16 @@ header {
 .location_container {
   border-radius: 0.5rem;
   margin: 1rem 0;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
 }
 
 .location_container_title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
   color: #70a076;
 }
 
@@ -265,13 +303,14 @@ header {
 .location_container_text {
   font-weight: 400;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .location_container_address {
   font-weight: 400;
   font-size: 1rem;
   font-style: italic;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .location_container_button {
@@ -304,9 +343,15 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .date {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
   .locations {
     flex-direction: row;
     justify-content: center;
+    gap: 18rem;
+    margin: 4rem auto;
   }
 }
 
