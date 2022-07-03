@@ -42,12 +42,15 @@ INICIO MEDIA QUERIES GALERIA
 @media screen and (min-width: 1024px) {
   .galeria {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     grid-gap: 1rem;
 
     &__img {
       width: 100%;
+      align-self: center;
+      height: 100%;
+      object-fit: cover;
 
       @for $i from 1 through 3 {
         &--destacada#{$i} {

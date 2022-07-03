@@ -1,0 +1,31 @@
+.otherInfo {
+  background-color: $white;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 70vw;
+  &_individual {
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.info_img {
+  width: 20rem;
+}
+
+.infoTitle {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.3rem;
+  color: $black;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+.infoText {
+  text-align: left;
+}
