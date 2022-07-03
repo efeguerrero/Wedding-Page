@@ -10,7 +10,7 @@ header {
 }
 
 .siteTitle {
-  font-family: 'Alex Brush', cursive;
+  font-family: "Alex Brush", cursive;
   text-align: center;
   // margin-bottom: 10vh;
   color: $white;
@@ -19,9 +19,20 @@ header {
   font-weight: 200;
   padding: 1rem;
   padding-left: 1.6rem;
+  &_end {
+    letter-spacing: 0.2rem;
+    color: $black;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    &_amper {
+      color: $black;
+      display: inline;
+      font-family: "Alex Brush", cursive;
+    }
+  }
   &_amper {
     display: block;
-    font-family: 'Alex Brush', cursive;
+    font-family: "Alex Brush", cursive;
     text-align: center;
     // margin-bottom: 10vh;
     color: $white;
@@ -46,6 +57,13 @@ header {
 @media screen and (min-width: 768px) {
   .siteTitle {
     font-size: 7rem;
+    &_end {
+      margin-top: 2rem;
+      letter-spacing: 0.2rem;
+      color: $black;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
     &_amper {
       display: inline;
     }

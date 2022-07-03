@@ -1,3 +1,7 @@
+.mainInfo {
+  height: 100vh;
+}
+
 .date {
   font-weight: 200;
   font-size: 2rem;
@@ -7,7 +11,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
     color: $green;
   }
 }
@@ -31,13 +35,13 @@
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 0.6rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
     color: $green;
     margin-top: 0.5rem;
   }
 
   &_time {
-    font-family: 'Alex Brush', cursive;
+    font-family: "Alex Brush", cursive;
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 0.6rem;
@@ -86,13 +90,32 @@
   .date {
     font-size: 2.5rem;
     margin-top: 1.5rem;
+    &_title {
+      letter-spacing: 0.5rem;
+    }
   }
 
   .locations {
     flex-direction: row;
     justify-content: center;
-    gap: 18rem;
+    gap: 2rem;
     margin: 4rem auto;
     margin-top: 0.8rem;
+  }
+
+  .location_container {
+    &_title {
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .locations {
+    gap: 18rem;
+  }
+
+  .deco_close {
+    display: inline-block;
   }
 }

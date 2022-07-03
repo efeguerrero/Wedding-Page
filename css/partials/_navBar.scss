@@ -1,16 +1,17 @@
 .scrollLink {
   text-decoration: none;
-  color: black;
+  color: $white;
   text-transform: uppercase;
 }
 
 .navBar {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  //background-color: white;
+  background-color: $green;
   position: relative;
   transition: all 0.2s linear;
-  height: 8vh;
+  height: 5vh;
 }
 
 .navBar-fixed {
@@ -35,7 +36,7 @@
 }
 
 .navIcon-Container {
-  width: 2rem;
+  width: 1.5rem;
   cursor: pointer;
 }
 
@@ -45,7 +46,7 @@
 }
 
 .linksContainer {
-  background-color: white;
+  background-color: $green;
   position: absolute;
   top: 100%;
   left: 0%;
@@ -53,6 +54,7 @@
   height: 0;
   overflow: hidden;
   transition: all 0.4s linear;
+  border-bottom: 2px solid $green_highlight;
 }
 
 .link {
@@ -93,11 +95,12 @@
     display: flex;
     justify-content: center;
     background-color: transparent;
+    border: none;
   }
 
   .link {
     padding-left: 0rem;
-    margin: 1.5rem 6rem;
+    margin: 1.5rem auto;
   }
 
   .scrollLink {
@@ -106,6 +109,7 @@
   }
 
   .linksList {
+    width: 50vw;
     display: flex;
     flex-direction: row;
     align-items: center;
