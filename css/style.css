@@ -50,7 +50,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
