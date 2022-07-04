@@ -1,5 +1,5 @@
 .mainInfo {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .date {
@@ -41,7 +41,7 @@
   }
 
   &_time {
-    font-family: "Alex Brush", cursive;
+    font-family: 'Alex Brush', cursive;
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 0.6rem;
