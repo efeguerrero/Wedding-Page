@@ -43,7 +43,7 @@ body {
   position: relative;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  height: 8vh;
+  height: 7vh;
 }
 
 .navBar-fixed {
@@ -51,8 +51,8 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .navTitle {
@@ -78,8 +78,17 @@ body {
 }
 
 .navIcon-Container {
-  width: 1.5rem;
+  width: 2rem;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navIcon {
@@ -254,7 +263,7 @@ header {
 }
 
 .siteTitle {
-  font-family: "Alex Brush", cursive;
+  font-family: 'Alex Brush', cursive;
   text-align: center;
   color: #ffffff;
   font-size: 3.5rem;
@@ -274,12 +283,12 @@ header {
 .siteTitle_end_amper {
   color: #000000;
   display: inline;
-  font-family: "Alex Brush", cursive;
+  font-family: 'Alex Brush', cursive;
 }
 
 .siteTitle_amper {
   display: block;
-  font-family: "Alex Brush", cursive;
+  font-family: 'Alex Brush', cursive;
   text-align: center;
   color: #ffffff;
   font-size: 3.5rem;
@@ -288,7 +297,6 @@ header {
 /*Add this to avoid title moving around once navBar becomes "FIXED"*/
 .siteTitle-fixed {
   margin-bottom: 0;
-  margin-top: 10vh;
 }
 
 .subHeader {
@@ -463,6 +471,10 @@ header {
   .deco_close {
     display: inline-block;
   }
+}
+
+.deco_close_container {
+  margin-top: 2rem;
 }
 
 .nosotros {

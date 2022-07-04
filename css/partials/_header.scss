@@ -10,7 +10,7 @@ header {
 }
 
 .siteTitle {
-  font-family: "Alex Brush", cursive;
+  font-family: 'Alex Brush', cursive;
   text-align: center;
   // margin-bottom: 10vh;
   color: $white;
@@ -27,12 +27,12 @@ header {
     &_amper {
       color: $black;
       display: inline;
-      font-family: "Alex Brush", cursive;
+      font-family: 'Alex Brush', cursive;
     }
   }
   &_amper {
     display: block;
-    font-family: "Alex Brush", cursive;
+    font-family: 'Alex Brush', cursive;
     text-align: center;
     // margin-bottom: 10vh;
     color: $white;
@@ -43,7 +43,7 @@ header {
 /*Add this to avoid title moving around once navBar becomes "FIXED"*/
 .siteTitle-fixed {
   margin-bottom: 0;
-  margin-top: 10vh;
+  // margin-top: 10vh;
 }
 
 .subHeader {

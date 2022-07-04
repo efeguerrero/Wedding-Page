@@ -11,7 +11,7 @@
   background-color: $green;
   position: relative;
   transition: all 0.2s linear;
-  height: 8vh;
+  height: 7vh;
 }
 
 .navBar-fixed {
@@ -19,7 +19,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  transition: all 0.2s linear;
+  transition: all 0.4s linear;
 }
 
 .navTitle {
@@ -36,8 +36,11 @@
 }
 
 .navIcon-Container {
-  width: 1.5rem;
+  width: 2rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navIcon {
