@@ -1,6 +1,6 @@
 .mainInfo {
   // min-height: 100vh;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .date {
@@ -9,13 +9,13 @@
   text-transform: uppercase;
 
   &_title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    letter-spacing: 0.1rem;
-    color: $green_highlight;
+    letter-spacing: -0.1rem;
+    color: $green;
   }
 }
 
@@ -40,10 +40,10 @@
 
   &_title {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    //letter-spacing: 0.1rem;
+    letter-spacing: -0.1rem;
     color: $green;
     margin-top: 0.5rem;
   }
@@ -75,7 +75,7 @@
     margin: 0 auto;
     background-color: $green;
     border: none;
-    padding: 0.2rem 1.5rem;
+    padding: 0.25rem 1.8rem;
     border-radius: 0.5rem;
     border: 2px solid transparent;
     cursor: pointer;
@@ -109,9 +109,6 @@
   .date {
     font-size: 2.5rem;
     margin-top: 1.5rem;
-    &_title {
-      letter-spacing: 0.2rem;
-    }
   }
 
   .locations {
@@ -120,12 +117,6 @@
     gap: 2rem;
     margin: 4rem auto;
     margin-top: 0.8rem;
-  }
-
-  .location_container {
-    &_title {
-      letter-spacing: 0.2rem;
-    }
   }
 }
 

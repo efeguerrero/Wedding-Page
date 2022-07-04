@@ -4,19 +4,20 @@
 /* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Roboto:wght@100;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap");
 /* Reset Style */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(../../img/Foto_10.jpeg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../../img/Foto_10.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(../img/Foto_10_header.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/Foto_10_header.jpeg);
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -44,7 +45,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #12664f;
+  background-color: #2e888a;
   position: relative;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -103,7 +104,7 @@ body {
 }
 
 .linksContainer {
-  background-color: #12664f;
+  background-color: #2e888a;
   position: absolute;
   top: 100%;
   left: 0%;
@@ -124,7 +125,7 @@ body {
 }
 
 .link:hover {
-  background-color: #12664f;
+  background-color: #2e888a;
   cursor: pointer;
   padding-left: 1.8rem;
 }
@@ -219,8 +220,8 @@ body {
     color: black;
   }
   .link-fixed:hover {
-    color: #12664f;
-    border-bottom: 1px solid #12664f;
+    color: #2e888a;
+    border-bottom: 1px solid #2e888a;
   }
 }
 
@@ -243,7 +244,7 @@ body {
 .underline {
   width: 5rem;
   height: 2.5px;
-  background-color: #12664f;
+  background-color: #2e888a;
   margin: 2.5rem auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -262,43 +263,48 @@ body {
 
 header {
   height: 100vh;
-  background-color: #12664f;
-  background-image: url(../img/fondo_header.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .siteTitle {
-  font-family: 'Alex Brush', cursive;
+  font-family: 'Frank Ruhl Libre', serif;
   text-align: center;
   color: #ffffff;
-  font-size: 3.5rem;
-  letter-spacing: 0.7rem;
-  font-weight: 200;
-  padding: 1rem;
-  padding-left: 1.6rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+.siteTitle_sub {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: lowercase;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
 }
 
 .siteTitle_end {
   letter-spacing: 0.2rem;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 
 .siteTitle_end_amper {
-  color: #000000;
+  color: #ffffff;
   display: inline;
-  font-family: 'Alex Brush', cursive;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 
 .siteTitle_amper {
   display: block;
-  font-family: 'Alex Brush', cursive;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 400;
   text-align: center;
   color: #ffffff;
-  font-size: 3.5rem;
+  font-size: 5.5rem;
 }
 
 /*Add this to avoid title moving around once navBar becomes "FIXED"*/
@@ -323,24 +329,43 @@ header {
           align-items: center;
 }
 
+.subHeader_titleContainer {
+  padding: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   .siteTitle {
     font-size: 7rem;
   }
   .siteTitle_end {
+    font-family: 'Frank Ruhl Libre', serif;
     margin-top: 2rem;
     letter-spacing: 0.2rem;
-    color: #000000;
-    font-size: 1.8rem;
+    color: #ffffff;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
   }
   .siteTitle_amper {
     display: inline;
+    font-size: 7rem;
   }
 }
 
 .mainInfo {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .date {
@@ -350,13 +375,13 @@ header {
 }
 
 .date_title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  letter-spacing: 0.1rem;
-  color: #15795f;
+  letter-spacing: -0.1rem;
+  color: #2e888a;
 }
 
 .locations {
@@ -393,10 +418,11 @@ header {
 
 .location_container_title {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  color: #12664f;
+  letter-spacing: -0.1rem;
+  color: #2e888a;
   margin-top: 0.5rem;
 }
 
@@ -428,9 +454,9 @@ header {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  background-color: #12664f;
+  background-color: #2e888a;
   border: none;
-  padding: 0.2rem 1.5rem;
+  padding: 0.25rem 1.8rem;
   border-radius: 0.5rem;
   border: 2px solid transparent;
   cursor: pointer;
@@ -447,11 +473,11 @@ header {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   background-color: #ffffff;
-  border: 2px solid #12664f;
+  border: 2px solid #2e888a;
 }
 
 .location_container_button:hover a {
-  color: #12664f;
+  color: #2e888a;
 }
 
 .time_container {
@@ -477,9 +503,6 @@ header {
     font-size: 2.5rem;
     margin-top: 1.5rem;
   }
-  .date_title {
-    letter-spacing: 0.2rem;
-  }
   .locations {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -491,9 +514,6 @@ header {
     gap: 2rem;
     margin: 4rem auto;
     margin-top: 0.8rem;
-  }
-  .location_container_title {
-    letter-spacing: 0.2rem;
   }
 }
 
@@ -663,7 +683,7 @@ FIN GALERIA
   text-transform: uppercase;
   margin-bottom: 0.6rem;
   letter-spacing: 0.3rem;
-  color: #12664f;
+  color: #2e888a;
   text-align: left;
 }
 
