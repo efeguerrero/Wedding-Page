@@ -10,12 +10,12 @@
 
   &_title {
     font-weight: 500;
-    font-size: 2.5rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    //text-transform: uppercase;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    letter-spacing: -0.1rem;
-    color: $green;
+    letter-spacing: 0.1rem;
+    color: $black;
   }
 }
 
@@ -23,13 +23,14 @@
   display: flex;
   flex-direction: column;
   max-width: 70vw;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .location_container {
   border-radius: 0.5rem;
-  margin: 1rem 0;
-  padding: 1rem 1rem;
+  margin: 0rem 0;
+  padding: 0.5rem 1rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,17 +40,17 @@
   }
 
   &_title {
-    font-size: 2.5rem;
     font-weight: 500;
+    font-size: 2rem;
     text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: $black;
     margin-bottom: 1rem;
-    letter-spacing: -0.1rem;
-    color: $green;
     margin-top: 0.5rem;
   }
 
   &_time {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-bottom: 0.6rem;
     font-weight: 400;
     text-align: left;
@@ -58,7 +59,7 @@
 
   &_text {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-bottom: 0.7rem;
     //margin-top: 1rem;
   }
@@ -99,7 +100,7 @@
 .time_container {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   gap: 0.3rem;
   width: 100%;
@@ -109,6 +110,9 @@
   .date {
     font-size: 2.5rem;
     margin-top: 1.5rem;
+    &_title {
+      font-size: 2rem;
+    }
   }
 
   .locations {
@@ -116,13 +120,17 @@
     justify-content: center;
     gap: 2rem;
     margin: 4rem auto;
-    margin-top: 0.8rem;
+    margin-top: 3rem;
+  }
+
+  .time_container {
+    justify-content: flex-start;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .locations {
-    gap: 18rem;
+    gap: 8rem;
   }
 
   .deco_close {

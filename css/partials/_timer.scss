@@ -1,0 +1,54 @@
+// ===============
+// Countdown Timer
+// ===============
+
+.gift-info p {
+  margin: 2rem 0;
+}
+.deadline {
+  display: flex;
+  justify-content: center;
+}
+.deadline-format {
+  background: $green;
+  color: $white;
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  //place-items: center;
+  //text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.65rem;
+}
+.deadline h4:not(.expired) {
+  font-weight: 500;
+  font-size: 1.7rem;
+  //margin-bottom: 0.25rem;
+  letter-spacing: var(--spacing);
+}
+
+@media screen and (min-width: 768px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 3rem;
+    width: 95vw;
+  }
+  .gift-img {
+    margin-bottom: 0;
+  }
+
+  .deadline h4:not(.expired) {
+    font-size: 2rem;
+  }
+}

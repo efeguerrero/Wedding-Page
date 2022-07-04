@@ -45,7 +45,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #2e888a;
+  background-color: rgba(255, 255, 255, 0.2);
   position: relative;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -104,7 +104,7 @@ body {
 }
 
 .linksContainer {
-  background-color: #2e888a;
+  background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
   top: 100%;
   left: 0%;
@@ -113,7 +113,6 @@ body {
   overflow: hidden;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  border-bottom: 2px solid #15795f;
 }
 
 .link {
@@ -263,15 +262,15 @@ body {
 
 header {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .siteTitle {
   font-family: 'Frank Ruhl Libre', serif;
   text-align: center;
   color: #ffffff;
-  font-size: 2.5rem;
-  letter-spacing: 0.3rem;
+  font-size: 3.3rem;
+  letter-spacing: 0.2rem;
   font-weight: 400;
 }
 
@@ -279,9 +278,10 @@ header {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   text-transform: lowercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
+  margin-top: 2rem;
 }
 
 .siteTitle_end {
@@ -304,7 +304,7 @@ header {
   font-weight: 400;
   text-align: center;
   color: #ffffff;
-  font-size: 5.5rem;
+  font-size: 3.5rem;
 }
 
 /*Add this to avoid title moving around once navBar becomes "FIXED"*/
@@ -376,12 +376,11 @@ header {
 
 .date_title {
   font-weight: 500;
-  font-size: 2.5rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  letter-spacing: -0.1rem;
-  color: #2e888a;
+  letter-spacing: 0.1rem;
+  color: #000000;
 }
 
 .locations {
@@ -393,13 +392,13 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 70vw;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .location_container {
   border-radius: 0.5rem;
-  margin: 1rem 0;
-  padding: 1rem 1rem;
+  margin: 0rem 0;
+  padding: 0.5rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,17 +416,17 @@ header {
 }
 
 .location_container_title {
-  font-size: 2.5rem;
   font-weight: 500;
+  font-size: 2rem;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000000;
   margin-bottom: 1rem;
-  letter-spacing: -0.1rem;
-  color: #2e888a;
   margin-top: 0.5rem;
 }
 
 .location_container_time {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin-bottom: 0.6rem;
   font-weight: 400;
   text-align: left;
@@ -436,7 +435,7 @@ header {
 
 .location_container_text {
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin-bottom: 0.7rem;
 }
 
@@ -488,9 +487,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -503,6 +502,9 @@ header {
     font-size: 2.5rem;
     margin-top: 1.5rem;
   }
+  .date_title {
+    font-size: 2rem;
+  }
   .locations {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -513,13 +515,18 @@ header {
             justify-content: center;
     gap: 2rem;
     margin: 4rem auto;
-    margin-top: 0.8rem;
+    margin-top: 3rem;
+  }
+  .time_container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .locations {
-    gap: 18rem;
+    gap: 8rem;
   }
   .deco_close {
     display: inline-block;
@@ -528,6 +535,10 @@ header {
 
 .deco_close_container {
   margin-top: 2rem;
+}
+
+.nosotros {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*****************************************
@@ -731,6 +742,73 @@ FIN GALERIA
     -o-object-fit: cover;
        object-fit: cover;
     display: block;
+  }
+}
+
+.gift-info p {
+  margin: 2rem 0;
+}
+
+.deadline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.deadline-format {
+  background: #2e888a;
+  color: #ffffff;
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: -ms-grid;
+  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.65rem;
+}
+
+.deadline h4:not(.expired) {
+  font-weight: 500;
+  font-size: 1.7rem;
+  letter-spacing: var(--spacing);
+}
+
+@media screen and (min-width: 768px) {
+  .section-center {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 3rem;
+    width: 95vw;
+  }
+  .gift-img {
+    margin-bottom: 0;
+  }
+  .deadline h4:not(.expired) {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
