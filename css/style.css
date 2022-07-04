@@ -3,18 +3,23 @@
 /*Fin Definición de Mixins*/
 /* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 /* Reset Style */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(../../img/Foto_10.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../../img/Foto_10.jpeg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .underline {
@@ -39,7 +44,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #70a076;
+  background-color: #12664f;
   position: relative;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -98,7 +103,7 @@ body {
 }
 
 .linksContainer {
-  background-color: #70a076;
+  background-color: #12664f;
   position: absolute;
   top: 100%;
   left: 0%;
@@ -107,7 +112,7 @@ body {
   overflow: hidden;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  border-bottom: 2px solid #85ad8a;
+  border-bottom: 2px solid #15795f;
 }
 
 .link {
@@ -119,7 +124,7 @@ body {
 }
 
 .link:hover {
-  background-color: #70a076;
+  background-color: #12664f;
   cursor: pointer;
   padding-left: 1.8rem;
 }
@@ -214,8 +219,8 @@ body {
     color: black;
   }
   .link-fixed:hover {
-    color: #70a076;
-    border-bottom: 1px solid #70a076;
+    color: #12664f;
+    border-bottom: 1px solid #12664f;
   }
 }
 
@@ -226,18 +231,19 @@ body {
 }
 
 .sectionTitle {
-  font-family: "Alex Brush", cursive;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   line-height: 3rem;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.2rem;
   margin-top: 1 rem;
+  text-transform: uppercase;
 }
 
 .underline {
   width: 5rem;
   height: 2.5px;
-  background-color: #70a076;
+  background-color: #12664f;
   margin: 2.5rem auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -245,8 +251,9 @@ body {
 
 @media screen and (min-width: 768px) {
   .sectionTitle {
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-top: 1rem;
+    font-weight: 300;
   }
   .underline {
     margin-bottom: 3rem;
@@ -255,7 +262,7 @@ body {
 
 header {
   height: 100vh;
-  background-color: #70a076;
+  background-color: #12664f;
   background-image: url(../img/fondo_header.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -333,21 +340,23 @@ header {
 }
 
 .mainInfo {
-  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .date {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 .date_title {
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   letter-spacing: 0.1rem;
-  color: #70a076;
+  color: #15795f;
 }
 
 .locations {
@@ -358,7 +367,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 80vw;
+  max-width: 70vw;
   margin: 0 auto;
 }
 
@@ -378,25 +387,31 @@ header {
           align-items: center;
 }
 
+.location_container_indiv {
+  margin-bottom: 1rem;
+}
+
 .location_container_title {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 0.6rem;
-  letter-spacing: 0.1rem;
-  color: #70a076;
+  margin-bottom: 1rem;
+  color: #12664f;
   margin-top: 0.5rem;
 }
 
 .location_container_time {
-  font-family: 'Alex Brush', cursive;
-  font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-bottom: 0.6rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 0.2rem 0;
 }
 
 .location_container_text {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
 }
 
 .location_container_address {
@@ -413,9 +428,9 @@ header {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  background-color: #70a076;
+  background-color: #12664f;
   border: none;
-  padding: 0.5rem 2rem;
+  padding: 0.2rem 1.5rem;
   border-radius: 0.5rem;
   border: 2px solid transparent;
   cursor: pointer;
@@ -432,11 +447,29 @@ header {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   background-color: #ffffff;
-  border: 2px solid #70a076;
+  border: 2px solid #12664f;
 }
 
 .location_container_button:hover a {
-  color: #70a076;
+  color: #12664f;
+}
+
+.time_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3rem;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -445,7 +478,7 @@ header {
     margin-top: 1.5rem;
   }
   .date_title {
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
   }
   .locations {
     -webkit-box-orient: horizontal;
@@ -460,7 +493,7 @@ header {
     margin-top: 0.8rem;
   }
   .location_container_title {
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
   }
 }
 
@@ -475,10 +508,6 @@ header {
 
 .deco_close_container {
   margin-top: 2rem;
-}
-
-.nosotros {
-  background-color: rgba(245, 240, 240, 0.7);
 }
 
 /*****************************************
@@ -605,7 +634,7 @@ FIN GALERIA
 ****************************************
 */
 .otherInfo {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .info {
@@ -634,7 +663,7 @@ FIN GALERIA
   text-transform: uppercase;
   margin-bottom: 0.6rem;
   letter-spacing: 0.3rem;
-  color: #70a076;
+  color: #12664f;
   text-align: left;
 }
 
@@ -645,8 +674,7 @@ FIN GALERIA
 .infoText_cuenta {
   margin-top: 1rem;
   list-style: none;
-  font-size: 1rem;
-  font-style: italic;
+  font-size: 0.9rem;
   text-align: left;
 }
 
