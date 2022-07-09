@@ -12,45 +12,35 @@ header {
 
 .siteTitle {
   font-family: mainHeader;
-  //font-family: 'Alex Brush', cursive;
   text-align: center;
-  // margin-bottom: 10vh;
   color: $white;
-  font-size: 3.3rem;
-  font-weight: 200;
-  // padding: 1rem;
-  // padding-left: 1.6rem;
+  font-size: 8rem;
+  font-weight: 100;
+  word-spacing: -0.3rem;
+  line-height: 6rem;
 
-  &_sub {
+  &_mobile_break {
+    @extend .siteTitle;
+    display: block;
+    margin: 0.6rem 0;
+    font-size: 6rem;
+  }
+
+  &_date {
     color: $white;
     font-family: 'Poppins', sans-serif;
     text-transform: lowercase;
-    font-size: 1rem;
+    font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
-
-  &_end {
-    letter-spacing: 0.2rem;
-    color: $white;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    font-family: 'Frank Ruhl Libre', serif;
-    &_amper {
-      color: $white;
-      display: inline;
-      font-family: 'Frank Ruhl Libre', serif;
-    }
-  }
-  &_amper {
-    display: block;
-    font-family: 'Frank Ruhl Libre', serif;
-    font-weight: 400;
-    text-align: center;
-    // margin-bottom: 10vh;
-    color: $white;
-    font-size: 3.5rem;
+  &_names {
+    @extend .siteTitle_date;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
   }
 }
 
@@ -80,16 +70,5 @@ header {
 @media screen and (min-width: 768px) {
   .siteTitle {
     font-size: 10rem;
-    &_end {
-      font-family: mainHeader;
-      margin-top: 2rem;
-      color: $white;
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    &_amper {
-      display: inline;
-      font-size: 7rem;
-    }
   }
 }

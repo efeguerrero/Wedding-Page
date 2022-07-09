@@ -270,45 +270,37 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.siteTitle {
+.siteTitle, .siteTitle_mobile_break {
   font-family: mainHeader;
   text-align: center;
   color: #ffffff;
-  font-size: 3.3rem;
-  font-weight: 200;
+  font-size: 8rem;
+  font-weight: 100;
+  word-spacing: -0.3rem;
+  line-height: 6rem;
 }
 
-.siteTitle_sub {
+.siteTitle_mobile_break {
+  display: block;
+  margin: 0.6rem 0;
+  font-size: 6rem;
+}
+
+.siteTitle_date, .siteTitle_names {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   text-transform: lowercase;
-  font-size: 1rem;
+  font-size: 2.5rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
-.siteTitle_end {
-  letter-spacing: 0.2rem;
-  color: #ffffff;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  font-family: 'Frank Ruhl Libre', serif;
-}
-
-.siteTitle_end_amper {
-  color: #ffffff;
-  display: inline;
-  font-family: 'Frank Ruhl Libre', serif;
-}
-
-.siteTitle_amper {
-  display: block;
-  font-family: 'Frank Ruhl Libre', serif;
-  font-weight: 400;
-  text-align: center;
-  color: #ffffff;
-  font-size: 3.5rem;
+.siteTitle_names {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
 }
 
 /*Add this to avoid title moving around once navBar becomes "FIXED"*/
@@ -351,19 +343,8 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .siteTitle {
+  .siteTitle, .siteTitle_mobile_break {
     font-size: 10rem;
-  }
-  .siteTitle_end {
-    font-family: mainHeader;
-    margin-top: 2rem;
-    color: #ffffff;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  .siteTitle_amper {
-    display: inline;
-    font-size: 7rem;
   }
 }
 
