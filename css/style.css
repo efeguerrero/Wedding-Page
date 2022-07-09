@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap");
 @font-face {
   font-family: mainHeader;
-  src: url(../fonts/Sofye.ttf);
+  src: url(../fonts/BeautyRegular.ttf);
 }
 
 /* Reset Style */
@@ -275,7 +275,7 @@ header {
   text-align: center;
   color: #ffffff;
   font-size: 3.3rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .siteTitle_sub {
