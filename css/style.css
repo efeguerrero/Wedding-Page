@@ -274,7 +274,7 @@ header {
   font-family: mainHeader;
   text-align: center;
   color: #ffffff;
-  font-size: 8rem;
+  font-size: 6.5rem;
   font-weight: 100;
   word-spacing: -0.3rem;
   line-height: 6rem;
@@ -283,14 +283,14 @@ header {
 .siteTitle_mobile_break {
   display: block;
   margin: 0.6rem 0;
-  font-size: 6rem;
+  font-size: 5.4rem;
 }
 
 .siteTitle_date, .siteTitle_names {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   text-transform: lowercase;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
   margin-top: 1rem;
@@ -344,7 +344,20 @@ header {
 
 @media screen and (min-width: 768px) {
   .siteTitle, .siteTitle_mobile_break {
-    font-size: 10rem;
+    font-size: 10.5rem;
+    font-weight: 100;
+    word-spacing: 0rem;
+    line-height: 6rem;
+  }
+  .siteTitle_mobile_break {
+    display: inline;
+    font-size: 8.5rem;
+  }
+  .siteTitle_date, .siteTitle_names {
+    font-size: 3.5rem;
+  }
+  .siteTitle_names {
+    font-size: 1.3rem;
   }
 }
 
@@ -358,13 +371,19 @@ header {
   text-transform: uppercase;
 }
 
-.date_title {
+.date_title, .date_title_subtitle {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.4rem;
   color: #000000;
+}
+
+.date_title_subtitle {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
 }
 
 .locations {
@@ -376,12 +395,12 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 70vw;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 .location_container {
   border-radius: 0.5rem;
-  margin: 0rem 0;
+  margin: 1rem 0;
   padding: 0.5rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,32 +414,30 @@ header {
           align-items: center;
 }
 
-.location_container_indiv {
-  margin-bottom: 1rem;
-}
-
 .location_container_title {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.3rem;
   color: #000000;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
+  margin: 1rem 0;
 }
 
 .location_container_time {
-  font-size: 1.1rem;
-  margin-bottom: 0.6rem;
+  font-size: 2rem;
+  margin: 1rem;
   font-weight: 400;
-  text-align: left;
-  padding: 0.2rem 0;
+  text-align: center;
 }
 
 .location_container_text {
   font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.location_container_text_address {
   font-size: 1.1rem;
-  margin-bottom: 0.7rem;
+  display: block;
 }
 
 .location_container_address {
@@ -437,9 +454,10 @@ header {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  margin-top: 0.7rem;
   background-color: #2e888a;
   border: none;
-  padding: 0.25rem 1.8rem;
+  padding: 0.5rem 1.8rem;
   border-radius: 0.5rem;
   border: 2px solid transparent;
   cursor: pointer;
@@ -449,7 +467,7 @@ header {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .location_container_button:hover {
@@ -486,20 +504,23 @@ header {
     font-size: 2.5rem;
     margin-top: 1.5rem;
   }
-  .date_title {
-    font-size: 2rem;
+  .date_title, .date_title_subtitle {
+    font-size: 2.7rem;
+  }
+  .date_title_subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
   }
   .locations {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     gap: 2rem;
     margin: 4rem auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .time_container {
     -webkit-box-pack: start;
@@ -512,13 +533,6 @@ header {
   .locations {
     gap: 8rem;
   }
-  .deco_close {
-    display: inline-block;
-  }
-}
-
-.deco_close_container {
-  margin-top: 2rem;
 }
 
 .nosotros {
@@ -794,5 +808,32 @@ FIN GALERIA
   .deadline h4:not(.expired) {
     font-size: 2rem;
   }
+}
+
+.hashtag {
+  background-color: rgba(21, 121, 95, 0.8);
+}
+
+.hashtag_title {
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+}
+
+.hashtag_text {
+  font-weight: 300;
+  font-size: 2.3rem;
+  width: 70%;
+  margin: 2rem auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hashtag_text_subline {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

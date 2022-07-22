@@ -1,0 +1,25 @@
+.hashtag {
+  background-color: rgba(21, 121, 95, 0.8);
+
+  &_title {
+    font-weight: 500;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: $white;
+  }
+  &_text {
+    font-weight: 300;
+    font-size: 2.3rem;
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+
+    color: $white;
+    &_subline {
+      display: block;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+}
