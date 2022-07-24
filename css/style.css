@@ -56,7 +56,6 @@ body {
 }
 
 .navBar-fixed {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -388,10 +387,10 @@ header {
 
 .date_title, .date_title_subtitle {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.1rem;
   color: #000000;
 }
 
@@ -717,7 +716,7 @@ FIN GALERIA
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 2rem;
+  margin-left: 0rem;
   margin-bottom: 4rem;
 }
 
@@ -902,7 +901,7 @@ FIN GALERIA
 
 .hashtag_title {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #ffffff;
@@ -912,7 +911,7 @@ FIN GALERIA
 .hashtag_text {
   font-weight: 300;
   font-size: 1.2rem;
-  width: 70%;
+  width: 85%;
   margin: 2rem auto;
   text-align: center;
   color: #ffffff;
@@ -966,7 +965,7 @@ FIN GALERIA
 .regalo_text {
   font-weight: 300;
   font-size: 1.2rem;
-  width: 70%;
+  width: 85%;
   margin: 2rem auto;
   text-align: center;
   color: #000000;
@@ -1007,6 +1006,7 @@ FIN GALERIA
   }
   .regalo_text {
     font-size: 1.5rem;
+    width: 75%;
   }
 }
 /*# sourceMappingURL=style.css.map */
