@@ -43,11 +43,12 @@
 .infoContactos {
   list-style: none;
   margin-bottom: 2rem;
+  font-size: 1.4rem;
 }
 
 .contacto_nombre {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 //Info Media Queries
@@ -84,10 +85,10 @@
     font-size: 1.7rem;
   }
   .contacto_nombre {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
   .infoContactos {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }

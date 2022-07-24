@@ -743,11 +743,12 @@ FIN GALERIA
 .infoContactos {
   list-style: none;
   margin-bottom: 2rem;
+  font-size: 1.4rem;
 }
 
 .contacto_nombre {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -792,10 +793,10 @@ FIN GALERIA
     font-size: 1.7rem;
   }
   .contacto_nombre {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
   .infoContactos {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -910,7 +911,7 @@ FIN GALERIA
 
 .hashtag_text {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 85%;
   margin: 2rem auto;
   text-align: center;
@@ -997,7 +998,7 @@ FIN GALERIA
   margin-top: 1rem;
   list-style: none;
   font-size: 0.9rem;
-  text-align: left;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
