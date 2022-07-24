@@ -1,0 +1,58 @@
+.regalo {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 6rem;
+
+  &_title {
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $black;
+    word-wrap: break-word;
+  }
+  &_text {
+    font-weight: 300;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+
+    color: $black;
+    &_subline {
+      display: block;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+  &_img {
+    width: 5rem;
+    margin: 2rem;
+    margin-top: 1rem;
+  }
+  &_info {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.regalo_infoText {
+  &_cuenta {
+    margin-top: 1rem;
+    list-style: none;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+}
+
+////////////////////////Media Queries Regalo
+///
+@media screen and (min-width: 768px) {
+  .regalo {
+    &_title {
+      font-size: 2.5rem;
+    }
+    &_text {
+      font-size: 1.5rem;
+    }
+  }
+}

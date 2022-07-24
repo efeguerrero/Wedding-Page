@@ -44,6 +44,16 @@ header {
   }
 }
 
+.arrow_container {
+  margin: 0 auto;
+  text-align: center;
+
+  &_img {
+    height: 4rem;
+    display: none;
+  }
+}
+
 /*Add this to avoid title moving around once navBar becomes "FIXED"*/
 .siteTitle-fixed {
   margin-bottom: 0;
@@ -51,7 +61,7 @@ header {
 }
 
 .subHeader {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +79,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .siteTitle {
-    font-size: 10.5rem;
+    font-size: 9.8rem;
     font-weight: 100;
     word-spacing: 0rem;
     line-height: 6rem;
@@ -84,5 +94,13 @@ header {
     &_names {
       font-size: 1.3rem;
     }
+  }
+  .subHeader {
+    padding-top: 3rem;
+    height: 85vh;
+  }
+
+  .arrow_container_img {
+    display: inline;
   }
 }

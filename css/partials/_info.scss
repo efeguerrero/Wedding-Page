@@ -2,6 +2,7 @@
 
 .otherInfo {
   background-color: rgba(255, 255, 255, 0.6);
+  padding-top: 4rem;
 }
 
 .info {
@@ -9,7 +10,11 @@
   flex-direction: row;
   margin: 0 auto;
   width: 80vw;
+  justify-content: center;
   &_individual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 2rem;
     margin-bottom: 4rem;
   }
@@ -20,22 +25,29 @@
 }
 
 .infoTitle {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
   letter-spacing: 0.3rem;
   color: $green;
-  text-align: left;
+  font-weight: 600;
 }
-.infoText {
-  text-align: left;
 
-  &_cuenta {
-    margin-top: 1rem;
-    list-style: none;
-    font-size: 0.9rem;
-    text-align: left;
-  }
+.infoText {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.infoContactos {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.contacto_nombre {
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 //Info Media Queries
@@ -61,5 +73,21 @@
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+
+  .infoTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .infoText {
+    font-size: 1.7rem;
+  }
+  .contacto_nombre {
+    font-size: 1.4rem;
+  }
+
+  .infoContactos {
+    font-size: 1.2rem;
   }
 }

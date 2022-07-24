@@ -43,9 +43,7 @@ body {
 }
 
 .navBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -303,13 +301,23 @@ header {
   margin: 0;
 }
 
+.arrow_container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.arrow_container_img {
+  height: 4rem;
+  display: none;
+}
+
 /*Add this to avoid title moving around once navBar becomes "FIXED"*/
 .siteTitle-fixed {
   margin-bottom: 0;
 }
 
 .subHeader {
-  height: 90vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,7 +352,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .siteTitle, .siteTitle_mobile_break {
-    font-size: 10.5rem;
+    font-size: 9.8rem;
     font-weight: 100;
     word-spacing: 0rem;
     line-height: 6rem;
@@ -358,6 +366,13 @@ header {
   }
   .siteTitle_names {
     font-size: 1.3rem;
+  }
+  .subHeader {
+    padding-top: 3rem;
+    height: 85vh;
+  }
+  .arrow_container_img {
+    display: inline;
   }
 }
 
@@ -381,7 +396,7 @@ header {
 }
 
 .date_title_subtitle {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
 }
@@ -416,15 +431,16 @@ header {
 
 .location_container_title {
   font-weight: 500;
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   color: #000000;
   margin: 1rem 0;
+  margin-top: 0.3rem;
 }
 
 .location_container_time {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 1rem;
   font-weight: 400;
   text-align: center;
@@ -432,19 +448,12 @@ header {
 
 .location_container_text {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .location_container_text_address {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   display: block;
-}
-
-.location_container_address {
-  font-weight: 400;
-  font-size: 1rem;
-  font-style: italic;
-  margin-bottom: 1.5rem;
 }
 
 .location_container_button {
@@ -457,7 +466,7 @@ header {
   margin-top: 0.7rem;
   background-color: #2e888a;
   border: none;
-  padding: 0.5rem 1.8rem;
+  padding: 0.3rem 1.6rem;
   border-radius: 0.5rem;
   border: 2px solid transparent;
   cursor: pointer;
@@ -467,7 +476,7 @@ header {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .location_container_button:hover {
@@ -505,11 +514,14 @@ header {
     margin-top: 1.5rem;
   }
   .date_title, .date_title_subtitle {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
+    margin-bottom: 0.1rem;
   }
   .date_title_subtitle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 300;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
   }
   .locations {
     -webkit-box-orient: horizontal;
@@ -527,9 +539,21 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .location_container_title {
+    font-size: 1.8rem;
+  }
+  .location_container_text {
+    font-size: 1.3rem;
+  }
+  .location_container_text_address {
+    font-size: 0.9rem;
+  }
+  .location_container_time {
+    font-size: 1.5rem;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (min-width: 1024px) {
   .locations {
     gap: 8rem;
   }
@@ -664,6 +688,7 @@ FIN GALERIA
 */
 .otherInfo {
   background-color: rgba(255, 255, 255, 0.6);
+  padding-top: 4rem;
 }
 
 .info {
@@ -676,9 +701,22 @@ FIN GALERIA
           flex-direction: row;
   margin: 0 auto;
   width: 80vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .info_individual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 2rem;
   margin-bottom: 4rem;
 }
@@ -688,23 +726,29 @@ FIN GALERIA
 }
 
 .infoTitle {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
   letter-spacing: 0.3rem;
   color: #2e888a;
-  text-align: left;
+  font-weight: 600;
 }
 
 .infoText {
-  text-align: left;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.infoText_cuenta {
-  margin-top: 1rem;
+.infoContactos {
   list-style: none;
-  font-size: 0.9rem;
-  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.contacto_nombre {
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -740,6 +784,19 @@ FIN GALERIA
     -o-object-fit: cover;
        object-fit: cover;
     display: block;
+  }
+  .infoTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .infoText {
+    font-size: 1.7rem;
+  }
+  .contacto_nombre {
+    font-size: 1.4rem;
+  }
+  .infoContactos {
+    font-size: 1.2rem;
   }
 }
 
@@ -811,20 +868,50 @@ FIN GALERIA
 }
 
 .hashtag {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hashtag_img {
+  width: 100%;
+}
+
+.hashtag_info {
   background-color: rgba(21, 121, 95, 0.8);
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hashtag_title {
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #ffffff;
+  word-wrap: break-word;
 }
 
 .hashtag_text {
   font-weight: 300;
-  font-size: 2.3rem;
+  font-size: 1.2rem;
   width: 70%;
   margin: 2rem auto;
   text-align: center;
@@ -835,5 +922,91 @@ FIN GALERIA
   display: block;
   margin-top: 1rem;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hashtag_title {
+    font-size: 3.2rem;
+  }
+  .hashtag_text {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hashtag {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hashtag_img {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hashtag_info {
+    width: 50%;
+  }
+}
+
+.regalo {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 6rem;
+}
+
+.regalo_title {
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #000000;
+  word-wrap: break-word;
+}
+
+.regalo_text {
+  font-weight: 300;
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 2rem auto;
+  text-align: center;
+  color: #000000;
+}
+
+.regalo_text_subline {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.regalo_img {
+  width: 5rem;
+  margin: 2rem;
+  margin-top: 1rem;
+}
+
+.regalo_info {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.regalo_infoText_cuenta {
+  margin-top: 1rem;
+  list-style: none;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .regalo_title {
+    font-size: 2.5rem;
+  }
+  .regalo_text {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

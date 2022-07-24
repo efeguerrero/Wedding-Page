@@ -1,16 +1,31 @@
 .hashtag {
-  background-color: rgba(21, 121, 95, 0.8);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  &_img {
+    width: 100%;
+  }
+  &_info {
+    background-color: rgba(21, 121, 95, 0.8);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   &_title {
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: $white;
+    word-wrap: break-word;
   }
   &_text {
     font-weight: 300;
-    font-size: 2.3rem;
+    font-size: 1.2rem;
     width: 70%;
     margin: 2rem auto;
     text-align: center;
@@ -20,6 +35,33 @@
       display: block;
       margin-top: 1rem;
       text-align: center;
+    }
+  }
+}
+
+////////////////////////Media Queries Hashtag
+///
+@media screen and (min-width: 768px) {
+  .hashtag {
+    &_title {
+      font-size: 3.2rem;
+    }
+    &_text {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hashtag {
+    flex-direction: row;
+    &_img {
+      // min-width: 35rem;
+      width: 50%;
+      object-fit: cover;
+    }
+    &_info {
+      width: 50%;
     }
   }
 }
