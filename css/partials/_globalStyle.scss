@@ -1,10 +1,10 @@
 /* Google Fonts Import */
 
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Roboto:wght@100;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Roboto:wght@100;300;400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap");
 
 @font-face {
   font-family: mainHeader;
@@ -17,7 +17,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   //letter-spacing: 0.2rem;
   scroll-behavior: smooth;
 }
@@ -27,7 +27,7 @@ body {
       rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.3)
     ),
-    url(../img/Foto_10_header.jpeg);
+    url(../img/fondoPagina.jpeg);
   background-position: top;
   background-size: cover;
   background-attachment: fixed;

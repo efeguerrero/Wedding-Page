@@ -32,15 +32,17 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
 
 .regalo_infoText {
   &_cuenta {
+    margin: 0 auto;
     margin-top: 1rem;
     list-style: none;
-    font-size: 0.9rem;
-    text-align: center;
+    font-size: 1.2rem;
+    text-align: left;
   }
 }
 

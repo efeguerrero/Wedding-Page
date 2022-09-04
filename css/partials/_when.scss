@@ -75,10 +75,11 @@
   // }
 
   &_button {
+    display: block;
     transition: all 0.2s linear;
     width: fit-content;
     margin: 0 auto;
-    margin-top: 0.7rem;
+    margin-top: 1rem;
     background-color: $green;
     border: none;
     padding: 0.3rem 1.6rem;
