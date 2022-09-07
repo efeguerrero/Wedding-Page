@@ -9,7 +9,6 @@
   font-family: mainHeader;
   src: url(../fonts/BeautyRegular.ttf);
 }
-
 /* Reset Style */
 * {
   box-sizing: border-box;
@@ -112,7 +111,6 @@ body {
     color: white;
   }
 }
-
 /*Media Query for NavBar Expansion*/
 @media screen and (min-width: 768px) {
   .navIcon-Container {
@@ -182,7 +180,6 @@ body {
     border-bottom: 1px solid #ff9389;
   }
 }
-
 /* Section Style */
 .section {
   text-align: center;
@@ -218,7 +215,6 @@ body {
     margin-bottom: 3rem;
   }
 }
-
 header {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -233,13 +229,11 @@ header {
   word-spacing: -0.3rem;
   line-height: 6rem;
 }
-
 .siteTitle_mobile_break {
   display: block;
   margin: 0.6rem 0;
   font-size: 5.4rem;
 }
-
 .siteTitle_date, .siteTitle_names {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -249,7 +243,6 @@ header {
   letter-spacing: 0.2rem;
   margin-top: 1rem;
 }
-
 .siteTitle_names {
   font-size: 1rem;
   text-transform: uppercase;
@@ -261,7 +254,6 @@ header {
   margin: 0 auto;
   text-align: center;
 }
-
 .arrow_container_img {
   height: 4rem;
   display: none;
@@ -279,7 +271,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .subHeader_titleContainer {
   padding: 0.2rem;
   display: flex;
@@ -313,7 +304,6 @@ header {
     display: inline;
   }
 }
-
 .mainInfo {
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -323,7 +313,6 @@ header {
   font-size: 2rem;
   text-transform: uppercase;
 }
-
 .date_title, .date_title_subtitle {
   font-weight: 500;
   font-size: 2.3rem;
@@ -332,7 +321,6 @@ header {
   letter-spacing: 0.1rem;
   color: #000000;
 }
-
 .date_title_subtitle {
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
@@ -354,7 +342,6 @@ header {
   flex-direction: column;
   align-items: center;
 }
-
 .location_container_title {
   font-weight: 500;
   font-size: 2rem;
@@ -364,27 +351,25 @@ header {
   margin: 1rem 0;
   margin-top: 0.3rem;
 }
-
 .location_container_time {
   font-size: 1.8rem;
   margin: 1rem;
   font-weight: 400;
   text-align: center;
 }
-
 .location_container_text {
   font-weight: 400;
   font-size: 1.6rem;
 }
-
 .location_container_text_address {
   font-size: 0.9rem;
   display: block;
 }
-
 .location_container_button {
   display: block;
   transition: all 0.2s linear;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-top: 1rem;
@@ -395,20 +380,17 @@ header {
   border: 2px solid transparent;
   cursor: pointer;
 }
-
 .location_container_button a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   font-size: 1.1rem;
 }
-
 .location_container_button:hover {
   transition: all 0.2s linear;
   background-color: #ffffff;
   border: 2px solid #ff9389;
 }
-
 .location_container_button:hover a {
   color: #ff9389;
 }
@@ -460,13 +442,11 @@ header {
     font-size: 1.5rem;
   }
 }
-
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   .locations {
     gap: 8rem;
   }
 }
-
 .nosotros {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -487,7 +467,6 @@ header {
   align-items: center;
   gap: 1rem;
 }
-
 .galeria__img {
   width: 100%;
 }
@@ -509,7 +488,6 @@ INICIO MEDIA QUERIES GALERIA
     transform: scale(1.1);
   }
 }
-
 @media screen and (min-width: 1024px) {
   .galeria {
     display: grid;
@@ -521,7 +499,8 @@ INICIO MEDIA QUERIES GALERIA
     width: 100%;
     align-self: center;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .galeria__img--destacada1 {
     grid-column: 1/1;
@@ -544,12 +523,11 @@ INICIO MEDIA QUERIES GALERIA
     display: block;
   }
   .galeria__img--destacada5 {
-    grid-column: 3/5;
+    grid-column: 1/3;
     grid-row: 4/5;
     display: block;
   }
 }
-
 /* ************************************** 
 FIN MEDIA QUERIES GALERIA
 ************************************** */
@@ -572,7 +550,6 @@ FIN GALERIA
   width: 80vw;
   justify-content: center;
 }
-
 .info_individual {
   display: flex;
   flex-direction: column;
@@ -607,7 +584,6 @@ FIN GALERIA
   margin-bottom: 2rem;
   font-size: 1.2rem;
 }
-
 .infoContactos_email {
   text-decoration: none;
   font-size: 1.2rem;
@@ -637,7 +613,8 @@ FIN GALERIA
   .info_img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     display: block;
   }
   .infoTitle {
@@ -654,7 +631,6 @@ FIN GALERIA
     font-size: 1.6rem;
   }
 }
-
 .gift-info p {
   margin: 2rem 0;
 }
@@ -705,17 +681,14 @@ FIN GALERIA
     font-size: 2rem;
   }
 }
-
 .hashtag {
   padding: 0;
   display: flex;
   flex-direction: column;
 }
-
 .hashtag_img {
   width: 100%;
 }
-
 .hashtag_info {
   background-color: rgba(255, 147, 137, 0.8);
   padding: 4rem;
@@ -724,7 +697,6 @@ FIN GALERIA
   justify-content: center;
   align-items: center;
 }
-
 .hashtag_title {
   font-weight: 500;
   font-size: 2.3rem;
@@ -733,7 +705,6 @@ FIN GALERIA
   color: #ffffff;
   word-wrap: break-word;
 }
-
 .hashtag_text {
   font-weight: 300;
   font-size: 1.4rem;
@@ -742,7 +713,6 @@ FIN GALERIA
   text-align: center;
   color: #ffffff;
 }
-
 .hashtag_text_subline {
   display: block;
   margin-top: 1rem;
@@ -757,25 +727,23 @@ FIN GALERIA
     font-size: 1.8rem;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .hashtag {
     flex-direction: row;
   }
   .hashtag_img {
     width: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .hashtag_info {
     width: 50%;
   }
 }
-
 .regalo {
   background-color: rgba(255, 255, 255, 0.7);
   padding-bottom: 6rem;
 }
-
 .regalo_title {
   font-weight: 500;
   font-size: 2rem;
@@ -783,7 +751,6 @@ FIN GALERIA
   color: #000000;
   word-wrap: break-word;
 }
-
 .regalo_text {
   font-weight: 300;
   font-size: 1.2rem;
@@ -792,19 +759,16 @@ FIN GALERIA
   text-align: center;
   color: #000000;
 }
-
 .regalo_text_subline {
   display: block;
   margin-top: 1rem;
   text-align: center;
 }
-
 .regalo_img {
   width: 5rem;
   margin: 2rem;
   margin-top: 1rem;
 }
-
 .regalo_info {
   margin: 0 auto;
   display: flex;
@@ -828,5 +792,4 @@ FIN GALERIA
     font-size: 1.5rem;
     width: 75%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
