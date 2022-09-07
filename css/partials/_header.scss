@@ -28,7 +28,7 @@ header {
 
   &_date {
     color: $white;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: lowercase;
     font-size: 3.2rem;
     font-weight: 300;
@@ -97,7 +97,7 @@ header {
   }
   .subHeader {
     padding-top: 3rem;
-    height: 85vh;
+    //height: 85vh;
   }
 
   .arrow_container_img {

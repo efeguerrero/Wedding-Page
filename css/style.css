@@ -19,7 +19,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/fondoPagina.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/fondo_mobile.jpg);
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -33,6 +33,12 @@ body {
   margin-top: 0.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/fondoPagina.jpeg);
+    background-position: 0 -7rem;
+  }
+}
 .scrollLink {
   text-decoration: none;
   color: #ffffff;
@@ -298,7 +304,6 @@ header {
   }
   .subHeader {
     padding-top: 3rem;
-    height: 85vh;
   }
   .arrow_container_img {
     display: inline;

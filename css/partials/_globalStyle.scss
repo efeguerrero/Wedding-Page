@@ -27,7 +27,7 @@ body {
       rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.3)
     ),
-    url(../img/fondoPagina.jpeg);
+    url(../img/fondo_mobile.jpg);
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -39,4 +39,15 @@ body {
   background-color: $black;
   margin: 1.5rem auto;
   margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(../img/fondoPagina.jpeg);
+    background-position: 0 -7rem;
+  }
 }
