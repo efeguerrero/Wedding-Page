@@ -10,10 +10,6 @@
   src: url(../fonts/BeautyRegular.ttf);
 }
 /* Reset Style */
-html {
-  height: 100%;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,10 +19,9 @@ html {
 }
 
 body {
-  height: 100%;
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/fondoPagina.jpeg);
   background-position: top;
-  background-size: 100vh;
+  background-size: cover;
   background-attachment: fixed;
 }
 
