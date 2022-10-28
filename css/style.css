@@ -889,16 +889,18 @@ FIN GALERIA
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 5rem;
+  padding: 0 2rem;
 }
 
 .successTitle {
-  font-size: 3rem;
-  letter-spacing: 2px;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .successDescrip {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -930,4 +932,13 @@ FIN GALERIA
 
 .successLink {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .successTitle {
+    font-size: 3rem;
+  }
+  .successDescrip {
+    font-size: 1.7rem;
+  }
 }/*# sourceMappingURL=style.css.map */
