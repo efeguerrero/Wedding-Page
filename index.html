@@ -131,13 +131,14 @@
             </div>
       </div>
       </div>
-      <form action="" id="formGuest" class="formContainer">
+      <form action="https://api.web3forms.com/submit" method="POST" id="formGuest" class="formContainer">
+        <input type="hidden" name="access_key" value="daae5fe1-af77-48a2-94cf-6be15950b193">
         <h2 class="formTitle">¡Te Esperamos!</h2>
         <p class="formDescrip">Por favor confirmá tu asistencia completando los datos a continuación.  <span class="formDescrip_highlight"> Te pedimos que completes un formulario por persona invitada. Gracias!</span></p>
         <div class="inputContainer">
         <div class="formName">
-          <input type="text" class="name" placeholder="Nombre">
-          <input type="text" class="lastName" placeholder="Apellido">
+          <input type="text" name="name" class="name" placeholder="Nombre">
+          <input type="text" name="apellido" class="lastName" placeholder="Apellido">
         </div>
         <div class="formMenu">
         <label class="menuLabel" for="menuDropdown">Preferencia de Menú</label>
@@ -149,6 +150,7 @@
         </select>
         </div>
         </div>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
         <button class="formSubmit" type="submit">Enviar Confirmación</button>
       </form>
     </section>
