@@ -1,0 +1,47 @@
+.successContainer {
+  background-color: $white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+}
+
+.successTitle {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.successDescrip {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.successVolver {
+  display: block;
+  transition: all 0.2s linear;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 3rem;
+  background-color: $green;
+  border: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  &:hover {
+    transition: all 0.2s linear;
+    background-color: $white;
+    border: 2px solid $green;
+    color: $green;
+  }
+}
+
+.successLink {
+  text-decoration: none;
+}
